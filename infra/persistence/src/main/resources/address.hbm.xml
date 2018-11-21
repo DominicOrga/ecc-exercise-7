@@ -28,11 +28,7 @@
 				  column="zipcode" 
 				  type="java.lang.Integer"/>
 
-		<many-to-one name="employee" 
-					 class="com.ecc.exercise8.Employee"
-        			 column="employee_id" 
-        			 unique="true" 
-        			 not-null="true" 
-        			 cascade="all"/>    
+		<one-to-one class="com.ecc.exercise8.Employee"
+					name="employee"/>   
 	</class>
 </hibernate-mapping>

@@ -5,12 +5,12 @@ VALUES(2, 'Lebron', 'Raymone', 'James', '1984-12-30', '2003-11-3', 1.25, true);
 INSERT INTO Employee(id, first_name, middle_name, last_name, birth_date, date_hired, gwa, is_employed)
 VALUES(3, 'Kevin', 'Wayne', 'Durant', '1988-9-29', '2007-1-13', 1.5, false);
 
-INSERT INTO Address(id, barangay, city, street_number, zipcode, employee_id)
-VALUES(1, 'San Rafael', 'Curayao', '454', 1860, 1);
-INSERT INTO Address(id, barangay, city, street_number, zipcode, employee_id)
-VALUES(2, 'Manila', 'Metro Manila', '720', 1920, 2);
-INSERT INTO Address(id, barangay, city, street_number, zipcode, employee_id)
-VALUES(3, 'San Domingo', 'Caloocan', '324', 1920, 3);
+INSERT INTO Address(id, barangay, city, street_number, zipcode)
+VALUES(1, 'San Rafael', 'Curayao', '454', 1860);
+INSERT INTO Address(id, barangay, city, street_number, zipcode)
+VALUES(2, 'Manila', 'Metro Manila', '720', 1920);
+INSERT INTO Address(id, barangay, city, street_number, zipcode)
+VALUES(3, 'San Domingo', 'Caloocan', '324', 1920);
 
 INSERT INTO contact(id, type, value, employee_id)
 VALUES(1, 'landline', '5702355', 1);

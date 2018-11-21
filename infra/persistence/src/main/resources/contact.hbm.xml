@@ -15,8 +15,8 @@
 		<property name="type" 
 				  column="type">
 
-			<type name="javax.persistence.EnumType">
-				<param name="enumClass">com.ecc.exercise8.Contact.ContactType</param>
+			<type name="org.hibernate.type.EnumType">
+				<param name="enumClass">com.ecc.exercise8.Contact$ContactType</param>
 				<param name="useNamed">true</param>
 			</type>
 		</property>
