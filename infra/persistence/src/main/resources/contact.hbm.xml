@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+	<class name="com.ecc.exercise8.Contact" 
+		   table="contact">
+
+		<id name="id" 
+			column="id" 
+			type="java.lang.Long">
+			
+			<generator class="increment"/>
+		</id>
+
+		<property name="type" 
+				  column="type">
+
+			<type name="javax.persistence.EnumType">
+				<param name="enumClass">com.ecc.exercise8.Contact.ContactType</param>
+				<param name="useNamed">true</param>
+			</type>
+		</property>
+
+		<property name="value" 
+				  column="value" 
+				  type="java.lang.String"/>
+
+		<many-to-one class="com.ecc.exercise8.Employee" 
+					 name="employee" 
+					 column="employee_id" 
+					 lazy="false"/>
+	</class>
+</hibernate-mapping>

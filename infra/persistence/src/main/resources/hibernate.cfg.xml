@@ -10,10 +10,11 @@
         <property name="connection.password">D4mkgo31nal</property> <!-- DB Password -->
         
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- DB Dialect -->
+        <property name="hibernate.hbm2ddl.auto">create-drop</property>
                 
-        <mapping class="com.ecc.exercise8.Employee"/>
-        <mapping class="com.ecc.exercise8.Address"/>
-        <mapping class="com.ecc.exercise8.Contact"/>
-        <mapping class="com.ecc.exercise8.Role"/>
+        <mapping resource="address.hbm.xml"/>
+        <mapping resource="contact.hbm.xml"/>
+        <mapping resource="employee.hbm.xml"/>
+        <mapping resource="role.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

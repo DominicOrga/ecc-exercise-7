@@ -1,21 +1,16 @@
 package com.ecc.exercise8;
 
-import javax.persistence.Embeddable;
-import javax.persistence.Column;
+// @Embeddable
+public class Name implements java.io.Serializable {
 
-import org.hibernate.validator.constraints.NotBlank;
-
-@Embeddable
-public class Name {
-
-	@Column(name = NameContract.COLUMN_FIRST_NAME)
-	@NotBlank
+	// @Column(name = NameContract.COLUMN_FIRST_NAME)
+	// @NotBlank
 	private String firstName;
-	@Column(name = NameContract.COLUMN_MIDDLE_NAME)
-	@NotBlank
+	// @Column(name = NameContract.COLUMN_MIDDLE_NAME)
+	// @NotBlank
 	private String middleName;
-	@Column(name = NameContract.COLUMN_LAST_NAME)
-	@NotBlank
+	// @Column(name = NameContract.COLUMN_LAST_NAME)
+	// @NotBlank
 	private String lastName;
 
 	public Name() {}

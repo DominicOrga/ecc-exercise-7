@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+	<class name="com.ecc.exercise8.Address" 
+		   table="address">
+
+		<id name="id" 
+			column="id" 
+			type="java.lang.Long">
+			
+			<generator class="increment"/>
+		</id>
+
+		<property name="streetNumber" 
+				  column="street_number" 
+				  type="java.lang.String"/>
+
+		<property name="barangay" 
+				  column="barangay" 
+				  type="java.lang.String"/>
+
+		<property name="city" 
+				  column="city" 
+				  type="java.lang.String"/>
+
+		<property name="zipcode" 
+				  column="zipcode" 
+				  type="java.lang.Integer"/>
+
+		<many-to-one name="employee" 
+					 class="com.ecc.exercise8.Employee"
+        			 column="employee_id" 
+        			 unique="true" 
+        			 not-null="true" 
+        			 cascade="all"/>    
+	</class>
+</hibernate-mapping>

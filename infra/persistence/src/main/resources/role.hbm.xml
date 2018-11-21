@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-access="field">
+	<class name="com.ecc.exercise8.Role" 
+		   table="role">
+
+		<id name="id" 
+			column="id" 
+			type="java.lang.Long">
+			<generator class="increment"/>
+		</id>
+
+		<property name="code" 
+				  column="code" 
+				  type="java.lang.String"/>
+		<property name="description" 
+				  column="description" 
+				  type="java.lang.String"/>
+
+		<set name="employees"
+			 table="employee_role"
+			 inverse="true"
+			 lazy="true">
+			
+			<key column="role_id"/>
+			<many-to-many class="com.ecc.exercise8.Employee" 
+						  column="employee_id"/>
+		</set>
+
+	</class>
+</hibernate-mapping>

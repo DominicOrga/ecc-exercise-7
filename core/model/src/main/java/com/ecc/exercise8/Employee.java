@@ -5,62 +5,45 @@ import java.util.HashSet;
 
 import java.time.LocalDate;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Embedded;
-import javax.persistence.GeneratedValue;
-import javax.persistence.OneToOne;
-import javax.persistence.OneToMany;
-import javax.persistence.ManyToMany;
-import javax.persistence.CascadeType;
-import javax.persistence.Column;
-import javax.persistence.JoinColumn;
-import javax.persistence.Table;
-import javax.persistence.JoinTable;
-import javax.persistence.AttributeOverrides;
-import javax.persistence.AttributeOverride;
-
-import javax.validation.constraints.NotNull;
-
-@Entity
-@Table(name = EmployeeContract.TABLE_NAME)
-public class Employee {
-	@Id
-	@GeneratedValue
-	@Column(name = EmployeeContract.COLUMN_ID)
+// @Entity
+// @Table(name = EmployeeContract.TABLE_NAME)
+public class Employee implements java.io.Serializable {
+	// @Id
+	// @GeneratedValue
+	// @Column(name = EmployeeContract.COLUMN_ID)
 	private Long id;
 	
-	@Embedded
+	// @Embedded
 	private Name name;
 
-	@Column(name = EmployeeContract.COLUMN_BIRTH_DATE)
-	@NotNull
+	// @Column(name = EmployeeContract.COLUMN_BIRTH_DATE)
+	// @NotNull
 	private LocalDate birthDate;
 
-	@Column(name = EmployeeContract.COLUMN_DATE_HIRED)
-	@NotNull
+	// @Column(name = EmployeeContract.COLUMN_DATE_HIRED)
+	// @NotNull
 	private LocalDate dateHired;
 
-	@Column(name = EmployeeContract.COLUMN_GWA)
-	@NotNull
+	// @Column(name = EmployeeContract.COLUMN_GWA)
+	// @NotNull
 	private Float gwa;
 
-	@Column(name = EmployeeContract.COLUMN_IS_EMPLOYED)
-	@NotNull
+	// @Column(name = EmployeeContract.COLUMN_IS_EMPLOYED)
+	// @NotNull
 	private Boolean isEmployed;
 	
-	@OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "employee", optional = false)
+	// @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "employee", optional = false)
 	private Address address;
 
-	@OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "employee")
+	// @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "employee")
 	private Set<Contact> contacts = new HashSet<>();
 
-	@ManyToMany
-	@JoinTable(
-		name = EmployeeRoleContract.TABLE_NAME,
-		joinColumns = { @JoinColumn(name = EmployeeRoleContract.COLUMN_EMPLOYEE_ID) },
-		inverseJoinColumns = { @JoinColumn(name = EmployeeRoleContract.COLUMN_ROLE_ID) }
-	)
+	// @ManyToMany
+	// @JoinTable(
+		// name = EmployeeRoleContract.TABLE_NAME,
+		// joinColumns =/ { @JoinColumn(name = EmployeeRoleContract.COLUMN_EMPLOYEE_ID) },
+		// inverseJoinColumns = { @JoinColumn(name = EmployeeRoleContract.COLUMN_ROLE_ID) }
+	// )
 	private Set<Role> roles = new HashSet<>();
 
 	public Employee() {}

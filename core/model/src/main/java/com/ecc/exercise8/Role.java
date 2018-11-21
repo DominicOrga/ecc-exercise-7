@@ -3,36 +3,24 @@ package com.ecc.exercise8;
 import java.util.Set;
 import java.util.HashSet;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Column;
-import javax.persistence.ManyToMany;
-import javax.persistence.CascadeType;
+// @Entity
+// @Table(name = RoleContract.TABLE_NAME)
+public class Role implements java.io.Serializable {
 
-import javax.validation.constraints.NotNull;
-
-import org.hibernate.validator.constraints.NotBlank;
-
-@Entity
-@Table(name = RoleContract.TABLE_NAME)
-public class Role {
-
-	@Id
-	@GeneratedValue
-	@Column(name = RoleContract.COLUMN_ID)
+	// @Id
+	// @GeneratedValue
+	// @Column(name = RoleContract.COLUMN_ID)
 	private Long id;
 
-	@Column(name = RoleContract.COLUMN_CODE, unique = true)
-	@NotBlank
+	// @Column(name = RoleContract.COLUMN_CODE, unique = true)
+	// @NotBlank
 	private String code;
 
-	@Column(name = RoleContract.COLUMN_DESCRIPTION)
-	@NotBlank
+	// @Column(name = RoleContract.COLUMN_DESCRIPTION)
+	// @NotBlank
 	private String description;
 
-	@ManyToMany(mappedBy = "roles")
+	// @ManyToMany(mappedBy = "roles")
 	private Set<Employee> employees = new HashSet<>();
 
 	public Role() {}
