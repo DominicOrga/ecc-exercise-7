@@ -1,16 +1,9 @@
 package com.ecc.exercise8;
 
-// @Embeddable
 public class Name implements java.io.Serializable {
 
-	// @Column(name = NameContract.COLUMN_FIRST_NAME)
-	// @NotBlank
 	private String firstName;
-	// @Column(name = NameContract.COLUMN_MIDDLE_NAME)
-	// @NotBlank
 	private String middleName;
-	// @Column(name = NameContract.COLUMN_LAST_NAME)
-	// @NotBlank
 	private String lastName;
 
 	public Name() {}
