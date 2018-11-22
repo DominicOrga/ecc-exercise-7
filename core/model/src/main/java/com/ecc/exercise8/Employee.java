@@ -5,7 +5,7 @@ import java.util.HashSet;
 
 import java.time.LocalDate;
 
-public class Employee implements java.io.Serializable {
+public class Employee {
 
 	private Long id;	
 	private Name name;

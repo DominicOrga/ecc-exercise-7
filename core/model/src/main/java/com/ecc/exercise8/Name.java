@@ -1,6 +1,6 @@
 package com.ecc.exercise8;
 
-public class Name implements java.io.Serializable {
+public class Name {
 
 	private String firstName;
 	private String middleName;

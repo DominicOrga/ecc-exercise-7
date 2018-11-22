@@ -3,7 +3,7 @@ package com.ecc.exercise8;
 import java.util.Set;
 import java.util.HashSet;
 
-public class Role implements java.io.Serializable {
+public class Role {
 
 	private Long id;
 

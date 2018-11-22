@@ -1,6 +1,6 @@
 package com.ecc.exercise8;
 
-public class Contact implements java.io.Serializable {
+public class Contact {
 
 	public enum ContactType {
 		landline, mobile, email

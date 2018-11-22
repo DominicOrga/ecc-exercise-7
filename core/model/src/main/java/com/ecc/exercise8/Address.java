@@ -1,6 +1,6 @@
 package com.ecc.exercise8;
 
-public class Address implements java.io.Serializable {
+public class Address {
 
 	private Long id;
 	private String streetNumber;
