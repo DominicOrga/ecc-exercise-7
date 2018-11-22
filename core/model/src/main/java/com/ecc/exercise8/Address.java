@@ -1,18 +1,5 @@
 package com.ecc.exercise8;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Table;
-import javax.persistence.Column;
-import javax.persistence.JoinColumn;
-import javax.persistence.MapsId;
-import javax.persistence.OneToOne;
-import javax.persistence.CascadeType;
-
-import javax.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.NotBlank;
-
 public class Address implements java.io.Serializable {
 
 	private Long id;
