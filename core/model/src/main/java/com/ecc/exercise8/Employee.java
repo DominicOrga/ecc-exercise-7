@@ -5,45 +5,16 @@ import java.util.HashSet;
 
 import java.time.LocalDate;
 
-// @Entity
-// @Table(name = EmployeeContract.TABLE_NAME)
 public class Employee implements java.io.Serializable {
-	// @Id
-	// @GeneratedValue
-	// @Column(name = EmployeeContract.COLUMN_ID)
-	private Long id;
-	
-	// @Embedded
+
+	private Long id;	
 	private Name name;
-
-	// @Column(name = EmployeeContract.COLUMN_BIRTH_DATE)
-	// @NotNull
 	private LocalDate birthDate;
-
-	// @Column(name = EmployeeContract.COLUMN_DATE_HIRED)
-	// @NotNull
 	private LocalDate dateHired;
-
-	// @Column(name = EmployeeContract.COLUMN_GWA)
-	// @NotNull
 	private Float gwa;
-
-	// @Column(name = EmployeeContract.COLUMN_IS_EMPLOYED)
-	// @NotNull
 	private Boolean isEmployed;
-	
-	// @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "employee", optional = false)
 	private Address address;
-
-	// @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "employee")
 	private Set<Contact> contacts = new HashSet<>();
-
-	// @ManyToMany
-	// @JoinTable(
-		// name = EmployeeRoleContract.TABLE_NAME,
-		// joinColumns =/ { @JoinColumn(name = EmployeeRoleContract.COLUMN_EMPLOYEE_ID) },
-		// inverseJoinColumns = { @JoinColumn(name = EmployeeRoleContract.COLUMN_ROLE_ID) }
-	// )
 	private Set<Role> roles = new HashSet<>();
 
 	public Employee() {}
