@@ -17,8 +17,5 @@
         <field name="isEmployed">
             <constraint annotation="javax.validation.constraints.NotNull"/>
         </field>
-        <field name="isEmployed">
-            <constraint annotation="javax.validation.constraints.NotNull"/>
-        </field>
     </bean>
 </constraint-mappings>
