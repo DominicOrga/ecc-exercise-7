@@ -19,7 +19,7 @@ Exist Code Camp (ECC)
     * Data: Code, Description
     * Many-to-Many relationship with Employee
 
-2. DML Commands
+2. DML Commands:
     #### Employee
     * View all Employees ordered by GWA (java sorting), date hired (hql), or last name (hql)
     * Create Employee
@@ -41,7 +41,7 @@ Exist Code Camp (ECC)
     * Assign Role to Employee
     * Revoke Role from Employee
     
- 3. Project Structure
+ 3. Project Structure:
     - app
       - core
         - model
@@ -49,5 +49,5 @@ Exist Code Camp (ECC)
         - dao  
     - infra
       - persistence (DB Configuration Files)
-      - buildtools (Not a maven repository, but a container for sql dump files for table creation and data insertion.)
+      - buildtools (Not a maven repository, but a container for SQL dump files for table creation and data insertion)
     - utilities
