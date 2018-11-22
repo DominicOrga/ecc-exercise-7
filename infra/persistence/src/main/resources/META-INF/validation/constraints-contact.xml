@@ -1,0 +1,18 @@
+<constraint-mappings
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://jboss.org/xml/ns/javax/validation/mapping validation-mapping-1.1.xsd"
+    xmlns="http://jboss.org/xml/ns/javax/validation/mapping" version="1.1">
+
+    <default-package>com.ecc.exercise8</default-package>
+    <bean class="Contact" ignore-annotations="true">
+        <field name="type">
+            <constraint annotation="javax.validation.constraints.NotNull"/>
+        </field>
+        <field name="value">
+            <constraint annotation="org.hibernate.validator.constraints.NotBlank"/>
+        </field>
+        <field name="employee">
+            <constraint annotation="javax.validation.constraints.NotNull"/>
+        </field>
+    </bean>
+</constraint-mappings>

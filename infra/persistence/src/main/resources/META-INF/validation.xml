@@ -6,4 +6,5 @@
     <constraint-mapping>/META-INF/validation/constraints-role.xml</constraint-mapping>
     <constraint-mapping>/META-INF/validation/constraints-name.xml</constraint-mapping>
     <constraint-mapping>/META-INF/validation/constraints-employee.xml</constraint-mapping>
+    <constraint-mapping>/META-INF/validation/constraints-contact.xml</constraint-mapping>
 </validation-config>
