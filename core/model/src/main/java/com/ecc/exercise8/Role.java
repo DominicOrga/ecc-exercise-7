@@ -3,24 +3,14 @@ package com.ecc.exercise8;
 import java.util.Set;
 import java.util.HashSet;
 
-// @Entity
-// @Table(name = RoleContract.TABLE_NAME)
 public class Role implements java.io.Serializable {
 
-	// @Id
-	// @GeneratedValue
-	// @Column(name = RoleContract.COLUMN_ID)
 	private Long id;
 
-	// @Column(name = RoleContract.COLUMN_CODE, unique = true)
-	// @NotBlank
 	private String code;
 
-	// @Column(name = RoleContract.COLUMN_DESCRIPTION)
-	// @NotBlank
 	private String description;
 
-	// @ManyToMany(mappedBy = "roles")
 	private Set<Employee> employees = new HashSet<>();
 
 	public Role() {}
