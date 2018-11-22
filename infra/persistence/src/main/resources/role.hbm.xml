@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-access="field">
-	<class name="com.ecc.exercise8.Role" 
+	<class name="com.ecc.exercise7.Role" 
 		   table="role">
 
 		<id name="id" 
@@ -24,7 +24,7 @@
 			 lazy="true">
 			
 			<key column="role_id"/>
-			<many-to-many class="com.ecc.exercise8.Employee" 
+			<many-to-many class="com.ecc.exercise7.Employee" 
 						  column="employee_id"/>
 		</set>
 

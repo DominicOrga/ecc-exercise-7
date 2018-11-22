@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-access="field">
-	<class name="com.ecc.exercise8.Address" 
+	<class name="com.ecc.exercise7.Address" 
 		   table="address">
 
 		<id name="id" 
@@ -28,7 +28,7 @@
 				  column="zipcode" 
 				  type="java.lang.Integer"/>
 
-		<one-to-one class="com.ecc.exercise8.Employee"
+		<one-to-one class="com.ecc.exercise7.Employee"
 					name="employee"/>   
 	</class>
 </hibernate-mapping>

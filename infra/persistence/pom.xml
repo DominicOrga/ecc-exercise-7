@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <artifactId>infra</artifactId>
-    <groupId>com.ecc.exercise8</groupId>
+    <groupId>com.ecc.exercise7</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>com.ecc.exercise8</groupId>
+  <groupId>com.ecc.exercise7</groupId>
   <artifactId>persistence</artifactId>
   <version>1.0-SNAPSHOT</version>
 

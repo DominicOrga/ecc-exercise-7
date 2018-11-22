@@ -2,12 +2,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.ecc.exercise8</groupId>
-  <artifactId>exercise8</artifactId>
+  <groupId>com.ecc.exercise7</groupId>
+  <artifactId>exercise7</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>exercise8</name>
+  <name>exercise7</name>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,27 +45,27 @@
   <dependencyManagement>
     <dependencies>
       <dependency>
-        <groupId>com.ecc.exercise8</groupId>
+        <groupId>com.ecc.exercise7</groupId>
         <artifactId>model</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.ecc.exercise8</groupId>
+        <groupId>com.ecc.exercise7</groupId>
         <artifactId>persistence</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.ecc.exercise8</groupId>
+        <groupId>com.ecc.exercise7</groupId>
         <artifactId>dao</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.ecc.exercise8</groupId>
+        <groupId>com.ecc.exercise7</groupId>
         <artifactId>service</artifactId>
         <version>${project.version}</version>
       </dependency>
       <dependency>
-        <groupId>com.ecc.exercise8</groupId>
+        <groupId>com.ecc.exercise7</groupId>
         <artifactId>util</artifactId>
         <version>${project.version}</version>
       </dependency>

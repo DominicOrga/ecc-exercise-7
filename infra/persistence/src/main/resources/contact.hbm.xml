@@ -2,7 +2,7 @@
 <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
 "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 <hibernate-mapping default-access="field">
-	<class name="com.ecc.exercise8.Contact" 
+	<class name="com.ecc.exercise7.Contact" 
 		   table="contact">
 
 		<id name="id" 
@@ -16,7 +16,7 @@
 				  column="type">
 
 			<type name="org.hibernate.type.EnumType">
-				<param name="enumClass">com.ecc.exercise8.Contact$ContactType</param>
+				<param name="enumClass">com.ecc.exercise7.Contact$ContactType</param>
 				<param name="useNamed">true</param>
 			</type>
 		</property>
@@ -25,7 +25,7 @@
 				  column="value" 
 				  type="java.lang.String"/>
 
-		<many-to-one class="com.ecc.exercise8.Employee" 
+		<many-to-one class="com.ecc.exercise7.Employee" 
 					 name="employee" 
 					 column="employee_id" 
 					 lazy="false"/>

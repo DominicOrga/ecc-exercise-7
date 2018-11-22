@@ -10,7 +10,7 @@
         <property name="connection.password">D4mkgo31nal</property> <!-- DB Password -->
         
         <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property> <!-- DB Dialect -->
-                
+        
         <mapping resource="address.hbm.xml"/>
         <mapping resource="contact.hbm.xml"/>
         <mapping resource="employee.hbm.xml"/>

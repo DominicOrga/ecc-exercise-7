@@ -9,8 +9,7 @@ CREATE TABLE address (
     barangay character varying(255) NOT NULL,
     city character varying(255) NOT NULL,
     street_number character varying(255) NOT NULL,
-    zipcode integer NOT NULL,
-    employee_id bigint NOT NULL
+    zipcode integer NOT NULL
 );
 
 CREATE TABLE contact (
