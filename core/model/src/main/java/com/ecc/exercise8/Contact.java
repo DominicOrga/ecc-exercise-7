@@ -13,31 +13,15 @@ import javax.persistence.GeneratedValue;
 import javax.validation.constraints.NotNull;
 import org.hibernate.validator.constraints.NotBlank;
 
-// @Entity
-// @Table(name = ContactContract.TABLE_NAME)
 public class Contact implements java.io.Serializable {
 
 	public enum ContactType {
 		landline, mobile, email
 	}
 
-	// @Id
-	// @GeneratedValue
-	// @Column(name = ContactContract.COLUMN_ID)
 	private Long id;
-
-	// @Enumerated(EnumType.STRING)
-	// @Column(name = ContactContract.COLUMN_TYPE)
-	// @NotNull
-	private ContactType type;
-	
-	// @Column(name = ContactContract.COLUMN_VALUE)
-	// @NotBlank
-	private String value;
-	
-	// @ManyToOne
-	// @JoinColumn(name = ContactContract.COLUMN_EMPLOYEE_ID)
-	// @NotNull
+	private ContactType type;	
+	private String value;	
 	private Employee employee;
 
 	public Contact() {}
